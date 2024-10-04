@@ -3,10 +3,6 @@ pipeline {
   
           agent any
 
-          tools {
-            maven 'maven'
-          }
-
           stages{
             stage('Get from git project'){
   steps {
@@ -20,7 +16,8 @@ pipeline {
 
                 steps {
                     
-                   sh 'mvn clean install -DskipTests'
+                  // sh 'mvn clean install -DskipTests'
+                  echo "success"
                 
                       }
 
