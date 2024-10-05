@@ -12,8 +12,8 @@ pipeline {
 
            // Create a new .jar file 
 
-            stage('Create a new .jar') {
-
+           // stage('Create a new .jar') {
+				stage('un simple message') {
                 steps {
                     
                   // sh 'mvn clean install -DskipTests'
